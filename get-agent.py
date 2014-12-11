@@ -32,7 +32,7 @@ def upgrade():
     #Define variables
     account = 'Azure'
     agentUri = ('https://raw.githubusercontent.com/{0}/'
-                'WALinuxAgent/2.0/waagent').format(account)
+                'WALinuxAgent/WALinuxAgent-2.0.11/waagent').format(account)
     distro = platform.linux_distribution()
     cmd = ['service', 'waagent', 'restart']
     agent_file="/usr/sbin/waagent"
